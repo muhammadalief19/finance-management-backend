@@ -8,13 +8,13 @@ To use this App is very simple, you must run a simple syntax in terminal or comm
 ### Clone The Project
 
 ```
-git clone https://github.com/muhammadalief19/project-wmk-backend.git
+git clone https://github.com/muhammadalief19/finance-management-backend.git
 ```
 
 or
 
 ```
-git clone git@github.com:muhammadalief19/project-wmk-backend.git
+git clone git@github.com:muhammadalief19/finance-management-backend.git
 ```
 
 ### Install The Project With Composer
@@ -60,7 +60,7 @@ php artisan migrate --seed
 ### And Lastly, Run the server
 
 ```
-php artisan serve
+php artisan serve --host 0.0.0.0
 ```
 
 ### License
