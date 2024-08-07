@@ -44,9 +44,9 @@ class KeuanganController extends Controller
         return response()->json($data);
     }
 
-    public function deletePemasukan($id)
+    public function delete($id)
     {
-        $finance = Keuangan::where('id', $id)->where('tipe', 'pemasukan')->first();
+        $finance = Keuangan::where('id', $id)->first();
         if ($finance) {
             $finance->delete();
             return response()->json(['message' => 'Data deleted successfully']);

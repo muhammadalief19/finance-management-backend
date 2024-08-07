@@ -26,7 +26,7 @@ Route::controller(KeuanganController::class)->group(function () {
     Route::get('/getJmlPengeluaran', 'getJmlPengeluaran');
     Route::get('/getDataPemasukan', 'getDataPemasukan');
     Route::get('/getDataPengeluaran', 'getDataPengeluaran');
-    Route::delete('/deletePemasukan/{id}', 'deletePemasukan');
+    Route::delete('/delete/{id}', 'delete');
     Route::post('/saveData', 'saveData');
     Route::put('/updateData/{id}', 'updateData');
 });
