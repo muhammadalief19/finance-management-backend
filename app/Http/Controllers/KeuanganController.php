@@ -23,13 +23,13 @@ class KeuanganController extends Controller
     public function getJmlPemasukan()
     {
         $total = Keuangan::where('tipe', 'pemasukan')->sum('jumlah_uang');
-        return response()->json(['total' => $total]);
+        return response()->json(['total' => strVal($total)]);
     }
 
     public function getJmlPengeluaran()
     {
         $total = Keuangan::where('tipe', 'pengeluaran')->sum('jumlah_uang');
-        return response()->json(['total' => $total]);
+        return response()->json(['total' => strVal($total)]);
     }
 
     public function getDataPemasukan()
